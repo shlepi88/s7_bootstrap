@@ -1,0 +1,54 @@
+.navbar {
+    background: $navbar-bg;
+    a {
+        color: $nav-item;
+        text-transform: uppercase;
+    }
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-item {
+   margin-left: 20px;
+}
+
+.arrow {
+    height: 7px;
+    width: 7px;
+    border: solid $arrow-color;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.logo {
+    width: 53px;
+    height: 47px;
+}
+
+.contact-nav {
+    background: $contact-nav-bg;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.contact-nav-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media {
+    img {
+        padding-bottom: 5px;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,75 @@
+.container-fluid {
+  max-width: 1600px;
+  margin: 0;
+  padding: 0; }
+
+.navbar {
+  background: #485d5e; }
+  .navbar a {
+    color: #dbdbdb;
+    text-transform: uppercase; }
+
+.navbar-collapse {
+  justify-content: flex-end; }
+
+.nav-item {
+  margin-left: 20px; }
+
+.arrow {
+  height: 7px;
+  width: 7px;
+  border: solid #9aa9b3;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 2px; }
+
+.right {
+  transform: rotate(-45deg); }
+
+.logo {
+  width: 53px;
+  height: 47px; }
+
+.contact-nav {
+  background: #141d22;
+  height: 40px;
+  width: 100%;
+  color: #fff;
+  padding-top: 10px; }
+
+.contact-nav-content {
+  display: flex;
+  justify-content: flex-end; }
+
+.social-media img {
+  padding-bottom: 5px;
+  margin-left: 10px; }
+
+.header-1 {
+  background: #a3d4d6;
+  color: #fff;
+  padding: 100px 0; }
+
+.marine-title {
+  font-size: 67px;
+  font-weight: 100; }
+  .marine-title span {
+    font-weight: 700; }
+
+.service {
+  display: flex;
+  color: #fff;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+  .service img {
+    height: 45px;
+    width: 45px;
+    margin-right: 20px; }
+
+.service-1-text h4 {
+  margin: 0; }
+
+.service-1-text p {
+  margin: 0; }

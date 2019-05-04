@@ -1,0 +1,11 @@
+{
+  "name": "s7_bootstrap",
+  "version": "1.0.0",
+  "description": "s7 task",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Nemanja",
+  "license": "ISC"
+}
