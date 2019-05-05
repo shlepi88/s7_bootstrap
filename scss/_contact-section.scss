@@ -1,0 +1,32 @@
+.contact-section {
+    padding: 60px 0;
+}
+
+.feature {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    h3 {
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+}
+
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-item {
+    background: $tl-date;
+    width: 200px;
+    height: 70px;
+    border-bottom: 1px solid #394d58;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    color: #fff;
+    font-size: 11px;
+    align-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: left;
+}
