@@ -1,0 +1,16 @@
+.main-features-section {
+    background: $main;
+}
+
+.main-features {
+    text-align: center;
+    padding-top: 40px;
+    color: #fff;
+    p {
+        padding: 30px 100px 50px 100px;
+    }
+    img {
+        width: 80%;
+        height: auto;
+    }
+}

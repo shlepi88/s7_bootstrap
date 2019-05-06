@@ -2,12 +2,27 @@
     padding: 60px 0;
 }
 
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
 .feature {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 230px 1fr;
     h3 {
         font-weight: bold;
         padding-bottom: 30px;
+    }
+}
+
+.feature-description {
+    padding-top: 70px;
+    font-size: 14px;
+    h3 {
+        padding: 20px 0;
+        color: $info;
     }
 }
 
@@ -29,4 +44,88 @@
     align-items: center;
     padding: 0 20px;
     text-align: left;
+}
+
+.web-list {
+    list-style-image: url('../img/icons/Layer\ 452@1X.png');
+    padding-left: 25px;
+}
+
+.web-item {
+    padding-bottom: 10px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    form {
+        padding-top: 70px;
+        position: relative;
+        input {
+            background: $input-bg;
+            border: 1px solid #eceded;
+            width: 100%;
+            height: 45px;
+            margin-bottom: 10px;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+        textarea {
+            background: $input-bg;
+            border: 1px solid #eceded;
+            width: 100%;
+            height: 115px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        button {
+            width: 110px;
+            height: 45px;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 0;
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
+        .btn-send {
+            background: $info;
+        }
+        .btn-clear {
+            background: #23323a;
+        }
+    }
+}
+
+.user {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+
+.mail {
+    position: absolute;
+    right: 20px;
+    top: 140px;
+}
+
+.map {
+    h3 {
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+}
+
+.map-img {
+    max-width: 270px;
+    height: 295px;
+    background: url('../img/Layer\ 463@1X.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }

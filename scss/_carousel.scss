@@ -1,0 +1,47 @@
+.carousel-section {
+    min-height: 120px;
+    background: $info;
+}
+
+.twitter-icon {
+    background: lighten($info, 5);
+    width: 130px;
+    height: 120px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: -30px;
+        margin-left: -5px;
+        border-width: 30px;
+        border-style: solid;
+        border-color: lighten($info, 5) transparent  transparent  transparent;
+    }
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.carousel-control-prev {
+    left: unset !important;
+    right: 30px;
+    width: 30px;
+}
+
+.carousel-control-next {
+    width: 30px;
+}
+
+// .carousel-inner {
+//     position: absolute !important;
+//     width: 70% !important;
+//     top: 40px !important;
+//     margin-left: 20%;
+// }
