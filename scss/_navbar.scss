@@ -18,15 +18,14 @@
 .arrow {
     height: 7px;
     width: 7px;
-    border: solid $arrow-color;
+    border: solid;
+    border-color: $arrow-color;
     border-width: 0 2px 2px 0;
     display: inline-block;
     margin-left: 10px;
     margin-bottom: 2px;
-}
-
-.right {
     transform: rotate(-45deg);
+    transition: all 0.5s;
 }
 
 .logo {
@@ -62,6 +61,14 @@
     img {
         padding-bottom: 5px;
         margin-left: 10px;
+    }
+}
+
+.active-blue {
+    color: $info !important;
+    i {
+        transform: rotate(45deg);
+        border-color: $info;
     }
 }
 

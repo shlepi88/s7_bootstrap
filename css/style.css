@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:800");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .container-fluid {
   max-width: 1600px;
   margin: 0 auto;
@@ -21,14 +26,14 @@
 .arrow {
   height: 7px;
   width: 7px;
-  border: solid #9aa9b3;
+  border: solid;
+  border-color: #9aa9b3;
   border-width: 0 2px 2px 0;
   display: inline-block;
   margin-left: 10px;
-  margin-bottom: 2px; }
-
-.right {
-  transform: rotate(-45deg); }
+  margin-bottom: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.5s; }
 
 .logo {
   width: 50px;
@@ -55,6 +60,12 @@
 .social-media img {
   padding-bottom: 5px;
   margin-left: 10px; }
+
+.active-blue {
+  color: #008fd5 !important; }
+  .active-blue i {
+    transform: rotate(45deg);
+    border-color: #008fd5; }
 
 @media (max-width: 576px) {
   .contact-nav {
@@ -290,7 +301,6 @@
     text-decoration: none; }
   .post-title p {
     font-size: 22px;
-    font-weight: bold;
     margin: 0; }
   .post-title img {
     width: 25px;
@@ -320,7 +330,6 @@
   background-repeat: no-repeat; }
   .post-img p {
     font-size: 20px;
-    font-weight: bold;
     color: #d2f0ff; }
   .post-img a {
     font-size: 12px;
@@ -335,7 +344,6 @@
   background-repeat: no-repeat; }
   .post-img-right p {
     font-size: 20px;
-    font-weight: bold;
     color: #d2f0ff; }
   .post-img-right a {
     font-size: 12px;
@@ -384,7 +392,6 @@
   display: grid;
   grid-template-columns: 230px 1fr; }
   .feature h3 {
-    font-weight: bold;
     padding-bottom: 30px; }
 
 .feature-description {
@@ -412,6 +419,9 @@
   padding: 0 20px;
   text-align: left; }
 
+.active-feature {
+  background: #008fd5; }
+
 .web-list {
   list-style-image: url("../img/icons/Layer 452@1X.png");
   padding-left: 25px; }
@@ -432,7 +442,7 @@
       height: 45px;
       margin-bottom: 10px;
       padding: 0 20px;
-      font-weight: bold; }
+      font-weight: 600; }
     .contact form textarea {
       background: #fcfcfc;
       border: 1px solid #eceded;
@@ -440,12 +450,11 @@
       height: 115px;
       margin-bottom: 20px;
       padding: 10px 20px;
-      font-weight: bold; }
+      font-weight: 600; }
     .contact form button {
       width: 110px;
       height: 45px;
       font-size: 11px;
-      font-weight: bold;
       border-radius: 0;
       color: #fff; }
       .contact form button:hover {
@@ -466,11 +475,10 @@
   top: 140px; }
 
 .map h3 {
-  font-weight: bold;
   padding-bottom: 30px; }
 
 .map-img {
-  max-width: 270px;
+  width: 270px;
   height: 295px;
   background: url("../img/Layer 463@1X.png");
   background-size: cover;
@@ -492,10 +500,25 @@
   .contact {
     grid-template-columns: 1fr; } }
 
+@media (max-width: 576px) {
+  .feature {
+    grid-template-columns: 1fr; }
+  .feature-item {
+    width: 100%; }
+  .feature-description {
+    padding-top: 0; }
+  .map-img {
+    width: 100%; }
+  .contact form {
+    padding-top: 20px; }
+  .user {
+    top: 30px; }
+  .mail {
+    top: 90px; } }
+
 .gallery {
   padding-bottom: 50px; }
   .gallery h3 {
-    font-weight: bold;
     padding-bottom: 30px; }
 
 .project {
@@ -536,7 +559,7 @@
   .project-title p {
     margin: 0;
     color: #73848e;
-    font-weight: bold; }
+    font-weight: 600; }
   .project-title:after {
     content: "";
     position: absolute;
@@ -554,6 +577,17 @@
   display: flex;
   justify-content: flex-end;
   align-items: center; }
+
+@media (max-width: 992px) {
+  .project {
+    border: none;
+    margin-bottom: 30px; } }
+
+@media (max-width: 576px) {
+  .project-grid {
+    justify-content: center; }
+  .project {
+    width: 100%; } }
 
 .logos {
   display: grid;
@@ -626,7 +660,7 @@
   justify-content: space-between; }
   .widgets p {
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 20px; }
   .widgets h5 {
     padding-bottom: 30px; }
@@ -651,10 +685,10 @@
   font-size: 11px; }
   .date p {
     margin: 0;
-    font-weight: 700; }
+    font-weight: 600; }
 
 .post-text i {
-  color: #fff; }
+  color: #bdd2dc; }
 
 .address,
 .phone {
@@ -694,3 +728,23 @@
 .widget-social-media img {
   padding-bottom: 5px;
   margin-right: 10px; }
+
+@media (max-width: 992px) {
+  .widgets h5 {
+    padding-bottom: 10px; }
+  .marine {
+    padding-bottom: 30px; }
+  .recent-posts {
+    padding-bottom: 30px; }
+  .contacts {
+    padding-bottom: 30px; }
+  .newsletter {
+    padding-bottom: 30px; } }
+
+footer {
+  height: 50px;
+  padding-top: 15px;
+  background: #141d22;
+  color: #547e93; }
+  footer p {
+    margin: 0; }
