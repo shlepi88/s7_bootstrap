@@ -1,0 +1,102 @@
+.widget-section {
+    background: $widgets-bg;
+    padding: 40px 0;
+}
+
+.widgets {
+    color: $widget-text;
+    justify-content: space-between;
+    p {
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+    h5 {
+        padding-bottom: 30px;
+    }
+}
+
+.marine {
+    color: $widget-text;
+    img {
+        padding-bottom: 0px;
+    }
+}
+
+.marine-logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    h3 {
+        padding-left: 20px;
+    }
+}
+
+.recent-posts {
+    hr {
+        border: .5px solid $widget-text;
+    }
+}
+
+.date {
+    display: flex;
+    font-size: 11px;
+    p {
+        margin: 0;
+        font-weight: 700;
+    }
+}
+
+.post-text {
+    i {
+        color: #fff;
+    }
+}
+
+.address,
+.phone {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    img {
+        width: 20px;
+        height: 30px;
+        margin-top: 3px;
+    }
+}
+
+.email {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    img {
+        width: 25px;
+        height: 15px;
+        margin-top: 3px;
+    }
+}
+
+.widget-form {
+    width: 100%;
+    position: relative;
+    input {
+        width: 100%;
+        height: 40px;
+        background: #23323a;
+        border: none;
+        color: $widget-text;
+        padding-left: 10px;
+        padding-right: 40px;
+        margin-bottom: 20px;
+    }
+    img {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+.widget-social-media {
+    img {
+        padding-bottom: 5px;
+        margin-right: 10px;
+    }
+}

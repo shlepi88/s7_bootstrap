@@ -46,17 +46,6 @@
     color: $post-text;
     position: relative;
     margin-top: 25px;
-    // &:after {
-    //     content: "";
-    //     position: absolute;
-    //     top: 35px;
-    //     left: 100%;
-    //     margin-top: -10px;
-    //     border-width: 10px;
-    //     border-style: solid;
-    //     border-color: #fff transparent transparent transparent;
-    //     transform: rotate(-90deg);
-    // }
     hr {
         border: .5px solid $posts-bg;
         margin: 0;
@@ -269,5 +258,11 @@
 
     .posts-right {
         padding-top: 0;
+    }
+}
+
+@media(max-width: 360px) {
+    .admin {
+        font-size: 9px;
     }
 }

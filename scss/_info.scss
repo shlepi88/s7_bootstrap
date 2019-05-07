@@ -22,3 +22,14 @@
     color: #fff;
     border-radius: 0;
 }
+
+@media (max-width: 768px) {
+    .info-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        h1 {
+            padding-bottom: 30px;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:800");
 .container-fluid {
   max-width: 1600px;
   margin: 0 auto;
@@ -48,10 +49,23 @@
 .contact-nav-content {
   display: flex;
   justify-content: flex-end; }
+  .contact-nav-content p {
+    text-transform: uppercase; }
 
 .social-media img {
   padding-bottom: 5px;
   margin-left: 10px; }
+
+@media (max-width: 576px) {
+  .contact-nav {
+    height: auto; }
+  .contact-nav-content {
+    display: grid;
+    justify-content: center;
+    justify-items: center; }
+  .social-media img {
+    padding-bottom: 5px;
+    margin: 5px; } }
 
 .header-1 {
   background: #a3d4d6;
@@ -60,9 +74,11 @@
 
 .marine-title {
   font-size: 67px;
-  font-weight: 100; }
-  .marine-title span {
-    font-weight: 700; }
+  font-weight: 100;
+  padding-bottom: 30px; }
+  .marine-title strong {
+    font-weight: 900;
+    text-shadow: 3px 3px 5px #000; }
 
 .service {
   display: flex;
@@ -79,7 +95,13 @@
   margin: 0; }
 
 .service-1-text p {
-  margin: 0; }
+  margin: 0;
+  color: #c3fbff;
+  text-shadow: 3px 3px 5px #000; }
+
+@media (max-width: 576px) {
+  .header-1 {
+    padding: 30px 0; } }
 
 .header-2 {
   background: #00aab4;
@@ -100,6 +122,12 @@
   .box p {
     font-size: 12px; }
 
+@media (max-width: 576px) {
+  .box {
+    margin-bottom: 50px; }
+    .box img {
+      margin-bottom: 20px; } }
+
 .info-content {
   padding: 60px 0;
   display: grid;
@@ -119,6 +147,14 @@
   height: 60px;
   color: #fff;
   border-radius: 0; }
+
+@media (max-width: 768px) {
+  .info-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center; }
+    .info-content h1 {
+      padding-bottom: 30px; } }
 
 .posts {
   padding: 60px 0;
@@ -332,6 +368,10 @@
   .posts-right {
     padding-top: 0; } }
 
+@media (max-width: 360px) {
+  .admin {
+    font-size: 9px; } }
+
 .contact-section {
   padding: 60px 0; }
 
@@ -440,6 +480,18 @@
   justify-content: center;
   align-content: center; }
 
+@media (max-width: 1200px) {
+  .feature-grid {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 992px) {
+  .feature-grid {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr; } }
+
 .gallery {
   padding-bottom: 50px; }
   .gallery h3 {
@@ -509,6 +561,10 @@
   justify-items: center;
   align-items: center; }
 
+@media (max-width: 992px) {
+  .logos img {
+    width: 80%; } }
+
 .main-features-section {
   background: #3a8698; }
 
@@ -521,6 +577,10 @@
   .main-features img {
     width: 80%;
     height: auto; }
+
+@media (max-width: 992px) {
+  .main-features p {
+    padding: 40px 0; } }
 
 .carousel-section {
   min-height: 120px;
@@ -556,3 +616,81 @@
 
 .carousel-control-next {
   width: 30px; }
+
+.widget-section {
+  background: #19242a;
+  padding: 40px 0; }
+
+.widgets {
+  color: #547e93;
+  justify-content: space-between; }
+  .widgets p {
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px; }
+  .widgets h5 {
+    padding-bottom: 30px; }
+
+.marine {
+  color: #547e93; }
+  .marine img {
+    padding-bottom: 0px; }
+
+.marine-logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px; }
+  .marine-logo h3 {
+    padding-left: 20px; }
+
+.recent-posts hr {
+  border: 0.5px solid #547e93; }
+
+.date {
+  display: flex;
+  font-size: 11px; }
+  .date p {
+    margin: 0;
+    font-weight: 700; }
+
+.post-text i {
+  color: #fff; }
+
+.address,
+.phone {
+  display: grid;
+  grid-template-columns: 30px 1fr; }
+  .address img,
+  .phone img {
+    width: 20px;
+    height: 30px;
+    margin-top: 3px; }
+
+.email {
+  display: grid;
+  grid-template-columns: 30px 1fr; }
+  .email img {
+    width: 25px;
+    height: 15px;
+    margin-top: 3px; }
+
+.widget-form {
+  width: 100%;
+  position: relative; }
+  .widget-form input {
+    width: 100%;
+    height: 40px;
+    background: #23323a;
+    border: none;
+    color: #547e93;
+    padding-left: 10px;
+    padding-right: 40px;
+    margin-bottom: 20px; }
+  .widget-form img {
+    position: absolute;
+    top: 15px;
+    right: 20px; }
+
+.widget-social-media img {
+  padding-bottom: 5px;
+  margin-right: 10px; }

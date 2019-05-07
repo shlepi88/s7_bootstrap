@@ -53,11 +53,31 @@
 .contact-nav-content {
     display: flex;
     justify-content: flex-end;
+    p {
+        text-transform: uppercase;
+    }
 }
 
 .social-media {
     img {
         padding-bottom: 5px;
         margin-left: 10px;
+    }
+}
+
+@media(max-width: 576px) {
+    .contact-nav {
+        height: auto;
+    }
+    .contact-nav-content {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    .social-media {
+        img {
+            padding-bottom: 5px;
+            margin: 5px;
+        }
     }
 }

@@ -22,3 +22,12 @@
         font-size: 12px;
     }
 }
+
+@media (max-width: 576px) {
+    .box {
+        margin-bottom: 50px;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}

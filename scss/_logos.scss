@@ -4,3 +4,20 @@
     justify-items: center;
     align-items: center;
 }
+
+@media (max-width: 992px) {
+    .logos {
+        img {
+            width: 80%;
+        }
+    }
+}
+
+// @media (max-width: 768px) {
+//     .logos {
+//         grid-template-columns: 
+//         img {
+//             width: 200px;
+//         }
+//     }
+// }
