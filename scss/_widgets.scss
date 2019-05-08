@@ -124,3 +124,9 @@
         padding-bottom: 30px;
     }
 }
+
+@media (max-width: 768px) {
+    .widget-section {
+        padding-bottom: 0;
+    }
+}

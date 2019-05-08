@@ -43,21 +43,35 @@
     align-items: center;
     padding: 0 20px;
     text-align: left;
-    // &:after {
-    //     content: "";
-    //     position: absolute;
-    //     top: 100%;
-    //     left: 50%;
-    //     margin-left: -5px;
-    //     border-width: 5px;
-    //     border-style: solid;
-    //     border-color: #fff transparent transparent transparent;
-    // }
+    position: relative;
+    cursor: pointer;
 }
 
 .active-feature {
     background: $info;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: 0;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color:  transparent #fff transparent transparent;
+    }
 }
+
+
+// .html,
+// .customization,
+// .support {
+//     display: none;
+// }
+
+// .show {
+//     display: block;
+// }
 
 .web-list {
     list-style-image: url('../img/icons/Layer\ 452@1X.png');

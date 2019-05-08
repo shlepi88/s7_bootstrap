@@ -42,7 +42,7 @@
 
 .navbar-brand span {
   font-size: 20px;
-  font-weight: bolder; }
+  letter-spacing: 5px; }
 
 .contact-nav {
   background: #141d22;
@@ -266,13 +266,13 @@
   top: 100px; }
 
 .circle-2 {
-  top: 420px; }
+  top: 370px; }
 
 .circle-3 {
-  top: 520px; }
+  top: 420px; }
 
 .circle-4 {
-  top: 940px; }
+  top: 650px; }
 
 .circle-bottom {
   width: 10px;
@@ -306,6 +306,10 @@
     width: 25px;
     height: 20px;
     margin-right: 10px; }
+  .post-title .link-img {
+    height: 25px; }
+  .post-title .paper-img {
+    height: 30px; }
 
 .learn {
   font-size: 14px;
@@ -417,10 +421,22 @@
   align-content: center;
   align-items: center;
   padding: 0 20px;
-  text-align: left; }
+  text-align: left;
+  position: relative;
+  cursor: pointer; }
 
 .active-feature {
-  background: #008fd5; }
+  background: #008fd5;
+  position: relative; }
+  .active-feature:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent; }
 
 .web-list {
   list-style-image: url("../img/icons/Layer 452@1X.png");
@@ -651,6 +667,40 @@
 .carousel-control-next {
   width: 30px; }
 
+.carousel-inner {
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  width: 70%; }
+  .carousel-inner p {
+    color: #fff; }
+
+@media (max-width: 992px) {
+  .carousel-section {
+    min-height: 260px;
+    background: #008fd5; }
+  .twitter-icon {
+    background: #00a0ef;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: relative; }
+    .twitter-icon::after {
+      top: unset;
+      bottom: -60px;
+      right: 45%;
+      border-color: #00a0ef transparent transparent transparent; }
+  .carousel-inner {
+    top: 160px;
+    left: unset;
+    width: 100%; }
+  .carousel-control-prev {
+    right: 70px; }
+  .carousel-control-next {
+    width: 30px;
+    right: 35px; } }
+
 .widget-section {
   background: #19242a;
   padding: 40px 0; }
@@ -740,6 +790,10 @@
     padding-bottom: 30px; }
   .newsletter {
     padding-bottom: 30px; } }
+
+@media (max-width: 768px) {
+  .widget-section {
+    padding-bottom: 0; } }
 
 footer {
   height: 50px;

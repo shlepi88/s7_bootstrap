@@ -38,3 +38,47 @@
 .carousel-control-next {
     width: 30px;
 }
+
+.carousel-inner {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    width: 70%;
+    p {
+        color: #fff;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-section {
+        min-height: 260px;
+        background: $info;
+    }
+    .twitter-icon {
+        background: lighten($info, 5);
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        &::after {
+            top: unset;
+            bottom: -60px;
+            right: 45%;
+            border-color: lighten($info, 5) transparent  transparent  transparent;
+        }
+    }
+    .carousel-inner {
+        top: 160px;
+        left: unset;
+        width: 100%;
+    }
+    .carousel-control-prev {
+        right: 70px;
+    }
+    
+    .carousel-control-next {
+        width: 30px;
+        right: 35px;
+    }
+}
