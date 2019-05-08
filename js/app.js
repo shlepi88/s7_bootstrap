@@ -9,6 +9,7 @@ $(document).ready( () => {
         $('i.arrow').removeClass('active-arrow');
         $('i.arrow').addClass('active-arrow');
     });
+
 });
 
 // Add/Remove Class On Nav Items

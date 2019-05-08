@@ -677,7 +677,7 @@
 
 @media (max-width: 992px) {
   .carousel-section {
-    min-height: 260px;
+    min-height: 300px;
     background: #008fd5; }
   .twitter-icon {
     background: #00a0ef;
